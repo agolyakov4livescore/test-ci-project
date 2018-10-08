@@ -30,5 +30,7 @@ public class MainPageTest {
         System.out.println("Page title is: " + driver.getTitle());
         driver.close();
 
+        AnotherTest.printLine();
+
     }
 }
