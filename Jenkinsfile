@@ -20,13 +20,12 @@ pipeline {
       parallel {
         stage('clean') {
           steps {
-            sh 'mvn --version'
             sh 'mvn clean'
           }
         }
         stage('print version') {
           steps {
-            sh 'sh \'mvn --version\''
+            sh 'mvn --version'
           }
         }
       }
