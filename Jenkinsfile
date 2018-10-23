@@ -21,6 +21,7 @@ pipeline {
         stage('clean') {
           steps {
             sh 'mvn clean'
+            sh 'echo "wat da??!"'
           }
         }
         stage('print version') {
